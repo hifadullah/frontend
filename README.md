@@ -1,70 +1,101 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TravelPlanner App 🌍
 
-## Available Scripts
+A Fullstack Tours & Travels Web App Using MERN Stack 💫
 
-In the project directory, you can run:
 
-### `npm start`
+## Resources
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React Docs](https://beta.reactjs.org/)
+- [BootStrap](https://getbootstrap.com/docs/)
+- [ReactStrap](https://github.com/reactstrap/reactstrap)
+- [Stackoverflow](https://stackoverflow.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Authors
 
-### `npm test`
+- [@hifadullah](https://github.com/hifadullah) 💫
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Badges
 
-### `npm run build`
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To Setup this project run
 
-### `npm run eject`
+```bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+yarn
+yarn serve
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Environment Variables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`REACT_APP_BASE_URL`= <http://localhost:4000/api/v1>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+- **Tours Listing:** Display a list of available tours for users to explore.
+- **Featured Tours:** Highlight and showcase special or popular tours on the homepage.
+- **Tour Details:** Provide comprehensive information about each tour, including description, itinerary, price, and more.
+- **Gallery:** Showcase high-quality images and videos of destinations and tour experiences.
+- **User Authentication:** Allow users to create accounts and log in to access personalized features.
+- **Booking System:** Enable users to book tours online with a secure and easy-to-use booking system.
+- **Search Tours:** Implement a search functionality to help users find specific tours based on their preferences.
+- **Reviews and Ratings:** Allow users to leave reviews and ratings for tours they have experienced.
+- **Responsive Design:** Ensure the website is optimized for various devices, including desktops, tablets, and smartphones.
+- **Newsletter Signup:** Allow users to subscribe to a newsletter to receive updates and promotions.
+- **User Reviews and Testimonials:** Showcase positive reviews and testimonials from previous customers to build trust.
+- **Contact Form:** Provide a contact form for users to get in touch with inquiries or feedback.
+- **Blogs:** Added Blogs feature to provide more information to customers.
+- **Alerts:** Appropriate alerts of errors and success for better user experience.
+- **FAQ's:** Include a frequently asked questions (FAQ) section to address common queries from users.
+- **Analytics** Integrated Google Analytics for analytics.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+While building this project, I embarked on my first full-stack journey, transitioning from frontend development to working with the backend. The journey was both exciting and challenging, and I learned a lot along the way:
 
-### Code Splitting
+1. **Frontend Gracefulness:** As I crafted the frontend, I encountered various errors, but I embraced each challenge as an opportunity to learn. With useState and other hooks, along with Bootstrap for styling, I built an intuitive and responsive user interface.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Backend Confidence:** Setting up the Express and MongoDB server initially seemed daunting, but I persisted. Working on controllers for API calls and defining routes took time, but I gained confidence as I overcame each obstacle.
 
-### Analyzing the Bundle Size
+3. **Expanded Toolkit:** Throughout the project, I explored additional React concepts like useEffect, useContext, and React Router DOM for seamless navigation between components and managing state effectively.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Deployment Know-How:** Deploying the backend server was a crucial step in making the application accessible online. I learned to configure the production environment, manage dependencies, and ensure security with HTTPS and authentication.
 
-### Making a Progressive Web App
+5. **Continuous Improvement:** I adopted a proactive approach to monitoring and logging server performance, identifying potential issues early on and implementing CI/CD pipelines for smooth and automated deployments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+6. **The Joy of Problem-Solving:** Despite encountering obstacles, I discovered the joy of problem-solving and the satisfaction that comes with finding solutions to complex challenges.
 
-### Advanced Configuration
+7. **Version Control and Rollbacks:** I grasped the importance of version control not only for the codebase but also for server configurations, facilitating easy rollbacks if needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Overall, this project marked a significant milestone in my journey as a full-stack developer. Combining frontend and backend expertise, I can now confidently bring complete web applications to life and tackle new challenges with enthusiasm.
 
-### Deployment
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Client:** React, Bootstrap, Reactstrap, Remix Icons
 
-### `npm run build` fails to minify
+**Server:** Node.js, Express
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Database:** MongoDB
+
+## Roadmap
+
+- Implement additional login options, such as Google signup.
+- Explore and integrate popular payment gateways for secure online transactions.
+- Enhance the app with modern features like real-time chat support and personalized recommendations.
+- Introduce advanced search filters for customized tour searches.
+- Integrate geolocation services for location-based tour suggestions.
+- Implement a user dashboard for managing and tracking bookings.
+
+# Hi, I'm  hifadullah! 👋
+
+## 🚀 About Me
+
+I'm hifadullah, a passionate full-stack developer with expertise in ReactJS,NextJS, NodeJs,ExpressJS and MongoDb. I love turning ideas into reality on the web. I thrive on challenges and continuously seek opportunities to push my boundaries. Let's create impactful projects together!
+
+## 🛠 Skills
+
+JavaScript, HTML, CSS, React, Bootstrap, Node.js, Express, MongoDB.
+
