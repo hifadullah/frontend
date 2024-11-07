@@ -12,8 +12,7 @@ const useFetch = (endpoint, queryParams) => {
       setLoading(true);
 
       try {
-        const apiUrl = process.env.REACT_APP_API_URL;
-        fetch(`${apiUrl}/endpoint`);, {
+        const response = await axios.get(`${BASE_URL}${endpoint}` ,{
           params: queryParams,
         });
         setData(response.data.data);
