@@ -24,7 +24,7 @@ const SearchBar = () => {
   
     try {
       // Make an API call to fetch the search results
-      const response = await axios.get(`${BASE_URL}/search?${searchParams}`);
+      const response = await axios.get(`${BASE_URL}search?${searchParams}`);
   
       navigate(`/search?${searchParams}`, { state: { searchResult: response.data.data } });
     } catch (error) {

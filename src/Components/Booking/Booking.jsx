@@ -37,7 +37,7 @@ const Booking = ({ tour, avgRating, totalRating, reviews }) => {
         return;
       }
 
-      const response = await fetch(`${BASE_URL}/booking`, {
+      const response = await fetch(`${BASE_URL}booking`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

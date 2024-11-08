@@ -25,7 +25,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/blogs/${id}`);
+        const response = await axios.get(`${BASE_URL}blogs/${id}`);
         setBlog(response.data);
         setLoading(false);
       } catch (error) {
@@ -68,7 +68,7 @@ const BlogDetails = () => {
     };
 
     try {
-      const response = await axios.post(`${BASE_URL}/comment/${id}`, commentData);
+      const response = await axios.post(`${BASE_URL}comment/${id}`, commentData);
 
       setComments([...comments, response.data]);
       commentMsgRef.current.value = "";

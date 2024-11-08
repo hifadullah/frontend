@@ -34,7 +34,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_START" });
     setError(null); // Reset the error on each login attempt
     try {
-      const res = await fetch(`${BASE_URL}/auth/login`, {
+      const res = await fetch(`${BASE_URL}auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,6 @@ const Login = () => {
       });
 
       const result = await res.json();
-
       if (!res.ok) {
         setError(result.message);
         dispatch({ type: "LOGIN_FAILURE", payload: result.message });

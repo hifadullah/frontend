@@ -37,16 +37,17 @@ const Register = () => {
     setError(null); // Reset the error on each registration attempt
     setIsEmailValid(true); // Reset email validation status
     try {
-      const res = await fetch(`${BASE_URL}/auth/register`, {
+      const res = await fetch(`${BASE_URL}auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         credentials: "include",
-        body: JSON.stringify(credentials),
+        body: JSON.stringify(credentials), // Ensure 'credentials' is an object
       });
-
+      
       const result = await res.json();
+      
       if (!res.ok) {
         setError(result.message);
         dispatch({ type: "REGISTER_FAILURE", payload: result.message });

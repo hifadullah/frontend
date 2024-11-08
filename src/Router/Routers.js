@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../Pages/Home';
 import Tours from '../Pages/Tours';
 import TourDetails from '../Pages/TourDetails';
@@ -38,5 +38,7 @@ const Router = () => {
     </Routes></>
   );
 };
+
+
 
 export default Router;
